@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- CSS Link -->
+<link rel="stylesheet" type="text/css" href="Style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="icon" href="Ico.ico">
+</head>
+<body>
+    <div id="TitleDiv">
+        <h1 id="MainTitle">Todo</h1>
+    </div>
+	
+    <div id="NewTaskDiv">
+        <!-- Sub Title -->
+        <h1 class="SubTitles" id="NewTaskTitle" onclick="ShowHideNewTask()" title="Hide/Show New Task Panel">Create a new task</h1>
+
+        <!-- Inner Title -->
+        <h1 class="InnerTitles" id="UrgencyTitle">Urgency</h1>
+
+        <!-- Urgency Selection -->
+        <div id="Urgency">
+            <button class="UrgencyBtns" id="LowUrgencyBtn" onclick="UrgencyHandler('Low')">Low</button>
+            <button class="UrgencyBtns" id="MidUrgencyBtn" onclick="UrgencyHandler('Medium')">Medium</button>
+            <button class="UrgencyBtns" id="HighUrgencyBtn" onclick="UrgencyHandler('High')">High</button>
+        </div>
+
+        <!-- Inner Title -->
+        <h1 class="InnerTitles" id="PropertiesTitle">Properties</h1>
+
+        <!-- New Task Properties -->
+        <div id="Properties">
+            <!-- New Task Name -->
+            <div class="NewTaskProps">
+                <span>Name</span>
+                <input type="text" class="TextInputs" id="TaskName" name="TaskName" maxlength="12">
+            </div>
+
+            <!-- New Task Description -->
+            <div class="NewTaskProps" style="margin-top: 10px">
+                <span>Description</span>
+                <input type="text" class="TextInputs" id="TaskDesc" name="TaskDesc" maxlength="60">
+            </div>
+
+            <!-- New Task Deadline -->
+            <div class="NewTaskProps" style="margin-top: 10px">
+                <span>Deadline</span>
+                <input type="date" class="TextInputs" id="TaskDL" name="TaskDL">
+            </div>
+        </div>
+
+        <button id="CreateBtn" onclick="CreateTask(document.getElementById('TaskName').value, document.getElementById('TaskDesc').value, 'Global', document.getElementById('TaskDL').value, 'Unfinished', 'HTML')">Create</button>
+    </div>
+
+    <hr style="margin-top: 25px">
+
+    <!-- Sub Title -->
+    <h1 class="SubTitles" id="TaskList" >Tasks (0)</h1>
+
+    <div id="TasksDiv">
+        <!-- Tasks Table -->
+        <table id="TaskTable" spellcheck="false" cellspacing="0">
+            <colgroup>
+                <col span="1" style="width: 10%">
+                <col span="1" style="width: 45%">
+                <col span="1" style="width: 10%">
+                <col span="1" style="width: 15%">
+                <col span="1" style="width: 5%">
+                <col span="1" style="width: 5%">
+                <col span="1" style="width: 5%">
+                <col span="1" style="width: 5%">
+            </colgroup>
+
+            <tr id="TaskTableColumns">
+                <th style="padding-bottom: 5px; padding-top: 5px">Name</th>
+                <th style="padding-bottom: 5px; padding-top: 5px">Description</th> 
+                <th style="padding-bottom: 5px; padding-top: 5px">Urgency</th>
+                <th style="padding-bottom: 5px; padding-top: 5px">Deadline</th>
+            </tr>
+        </table>
+    </div>
+</body>
+<!-- Bottom JS Link -->
+<script type="text/javascript" src="Script.js"></script>
+</html>

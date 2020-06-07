@@ -1,0 +1,189 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Body Style */
+body
+{
+    font-family: 'Quicksand';
+}
+
+/* Main Title Style */
+#TitleDiv
+{
+    height: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e6f3f7;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#MainTitle
+{
+    font-size: 52px;
+    text-align: center;
+}
+
+/* Sub Titles Style */
+.SubTitles
+{
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Inner Titles Style */
+.InnerTitles
+{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* New Task Div Style */
+#NewTaskDiv
+{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Urgency Style */
+#Urgency
+{
+    width: 17.5%;
+    max-width: 17.5%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.UrgencyBtns
+{
+    height: 30px;
+    width: 80px;
+    font-family: 'Quicksand';
+    background-color: white;
+    border-width: 0px;
+}
+
+.UrgencyBtns:focus
+{
+	outline: none;
+}
+
+/* Individual Urgency Button Style */
+#LowUrgencyBtn { background-color: #b2ffb2; cursor: pointer; }
+#LowUrgencyBtn:hover { font-weight: 600; }
+
+#MidUrgencyBtn { background-color: #ffffb2; cursor: pointer; }
+#MidUrgencyBtn:hover { font-weight: 600; }
+
+#HighUrgencyBtn { background-color: #ffb2b2; cursor: pointer; }
+#HighUrgencyBtn:hover { font-weight: 600; }
+
+/* Properties Style */
+#Properties
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text Inputs Style */
+.TextInputs
+{
+    max-width: 150px;
+    min-width: 0px;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    margin-left: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.NewTaskProps
+{
+    width: 17.5%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Create New Task Button */
+#CreateBtn
+{
+    height: 30px;
+    width: 17.5%;
+    min-width: 200px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    background-color: #e6f3f7;
+    border-width: 0px;
+    margin-top: 20px; /* Custom Margin */
+}
+
+/* Create New Task Button Hover */
+#CreateBtn:hover
+{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#CreateBtn:focus
+{
+	outline: none;
+}
+
+/* New Task Title Hover */
+#NewTaskTitle:hover
+{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Tasks Div Style */
+#TasksDiv
+{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tasks Table */
+#TaskTableColumns
+{
+    text-decoration: underline;
+    text-align: center;
+}
+
+#TaskTable
+{
+    min-width: 786px;
+    max-width: 788px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Default Table Data Row Style */
+/* .TableTrs:hover { background-color: #e6f3f7; } */
+
+/* Task Actions Style */
+.TaskActions:hover
+{
+    cursor: pointer;
+    font-weight: 600;
+}
+
